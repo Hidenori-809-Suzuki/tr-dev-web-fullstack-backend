@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "api.hello_db",
 ]
 
 MIDDLEWARE = [
@@ -104,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = "ja_jp"
+LANGUAGE_CODE = "ja-jp"
 
 TIME_ZONE = "UTC"
 
@@ -126,7 +127,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'headers': {
+    'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
         }
